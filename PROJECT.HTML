@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td ,tr{
+            padding: 10px;
+            text-align: left;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Resume Page</h2>
+        <label for="photo">Photo</label>
+        <br>
+        <input type="file" id="photo" name="photo" accept="image/*">
+      <br>
+      <br>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Your full name..">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email..">
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+
+        
+        <h3>Profile</h3>
+        <textarea id="profile" name="profile" placeholder="Your profile.."></textarea>
+
+        <h3>Core Competencies</h3>
+        <textarea id="competencies" name="competencies" placeholder="Your core competencies.."></textarea>
+<h3>Skills</h3>
+<textarea id="skills" name="skills" placeholder="Your skills..."></textarea>
+        <h3>Work Experience</h3>
+        <table>
+            <tr>
+                <th>Job Title</th>
+                <th>Company Name</th>
+             
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"</td>
+            </tr>
+            <tr>
+                <td><input type="text"</td>
+                <td><input type="text"</td>
+                <td><input type="text"</td>
+            </tr>
+        </table>
+
+        <h3>Education</h3>
+        <table>
+            <tr>
+                <th>Institution</th>
+                <th>Degree</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+
+            <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
